@@ -8,12 +8,10 @@
  * 6 - Opcional utilizar o "import React from 'react';", somente se utilizar alguma funcionalidade do pacote 'react'.
 **/
 
-import Cabecalho from "./Cabecalho/Cabecalho";
-
-export default function App(){
-  return(
-    <div>
-        <Cabecalho/>
-    </div>
-  );
-}
+export default function Cabecalho(){
+    return(
+      <header>
+        <h1>Cabacalho</h1>
+      </header>
+    );
+  }
