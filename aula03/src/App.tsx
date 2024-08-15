@@ -1,35 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+/**
+ * Regras para um componente funcional do React.
+ * 1 - Ser uma função JavaScript.
+ * 2 - Esta função deve ter como uma boa prática o mesmo nome do arquivo em questão.
+ * 3 - Ter um instrução return com corpo. Ex return( ... )
+ * 4 - Utilizar as directivas de exportação: export default antes do nome function.
+ * 5 - Criar uma estrutura dentro do return com elementos de blocos HTML do tipo PAI Ex: DIV,HEADER, MAIN, SECTION...
+ * 6 - Opcional utilizar o "import React from 'react';", somente se utilizar alguma funcionalidade do pacote 'react'.
+**/
+ 
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+return (
+  <div>
+    <h1>Olá, mundo!</h1>
+  </div>
+)
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
 }
-
-export default App
