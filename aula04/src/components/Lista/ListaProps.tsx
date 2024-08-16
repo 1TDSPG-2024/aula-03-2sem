@@ -1,9 +1,27 @@
+// PASSANDO UM LISTA COMO PROPS
 type ListaProps = {
-    nome: string;
+    nomes: string[];
 }
 
-export default function ListaProps({ nome }: ListaProps) {
+export default function ListaProps({ nomes }: ListaProps) {
     return (
-        <div>{nome}</div>
+        <ul>
+            {nomes.map((nome, i) => (
+                <li key={i}>{nome}</li>
+            ))}
+        </ul>
     )
 }
+
+
+//PROPS STRING SIMPLES
+
+// type ListaProps = {
+//     nome: string;
+// }
+
+// export default function ListaProps({ nome }: ListaProps) {
+//     return (
+//         <div>{nome}</div>
+//     )
+// }
